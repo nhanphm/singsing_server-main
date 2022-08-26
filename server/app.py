@@ -2,11 +2,8 @@ from fastapi import FastAPI, APIRouter, Depends, HTTPException, Header, Body, Fi
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import APIRouter, FastAPI, Body
 from fastapi.staticfiles import StaticFiles
-from utils.no_accent import no_accent_vietnamese
 import shutil
 import os
-import re
-from .convertAudio import convertWav
 from .get_song_list import  song_list
 
 router = APIRouter(
